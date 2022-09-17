@@ -35,8 +35,8 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=nvim
 
 # Use bat (batcat) for manpages and as replacement for cat
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-cat()   { bat $*; }
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+cat()   { batcat $*; }
 
 # Git shortcuts
 gits()  { git status; }
